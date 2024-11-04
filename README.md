@@ -19,15 +19,17 @@ Antes de comenzar, asegúrate de tener instalados los siguientes componentes:
      cd registro-alumnos
 
 
-2. **Instalar las dependencias del proyecto** usando Composer:
+2. **Instalar las dependencias del proyecto y generar clave** usando Composer:
    composer install
+   php artisan key:generate
 
-3. **Configurar la BD** usando MySQL:
+
+4. **Configurar la BD** usando MySQL:
    CREATE DATABASE registro_alumnos;
    cp .env.example .env
    Configurar .env para conectar con tu BD
    Ejecutar migraciones (php artisan migrate)
 
-4. **Ejecutar proyecto** :
+5. **Ejecutar proyecto** :
    php artisan serve
   
